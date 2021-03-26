@@ -1,24 +1,10 @@
-# README
+# Deploy Locally
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Download the code and go into the working directory (cd tiny-url-clone)
 
-Things you may want to cover:
+```
+rake db:setup
+rake db:migrate
+rails s
+```
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
