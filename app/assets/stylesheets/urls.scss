@@ -1,0 +1,23 @@
+// Place all the styles related to the urls controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+
+.content {
+    text-align: center;
+    input {
+        width: 100%;
+        padding: 1rem;
+    }
+}
+
+.info-content {
+    text-align: center;
+
+    padding: 1rem;
+
+    h2 {
+        text-decoration: underline;
+        padding: 1rem;
+    }
+}

@@ -1,0 +1,26 @@
+<div class="row">
+
+<div class="col-2"></div>
+
+<div class="col-8 info-content">
+  <h2>Shortened URL Information:</h2>
+
+  Shortened url: <%= link_to show_url(@url.shortened_url), show_url(@url.shortened_url), target: :_blank %>
+  <br>
+  Original url: <%= link_to @url.original_url_formatted, @url.original_url_formatted %>
+
+  <h2>URL Visits Information</h2>
+
+  <% if @url.url_visits.present? %>
+  <% @url.url_visits.each do |visitor| %>
+    IP Address: <%= visitor.ip_address %> at <%= visitor.created_at.strftime('%d %b %Y, %H:%M %Z') %>
+  <% end %>
+  <% else %>
+    No visitors yet!
+  <% end %>
+
+</div>
+
+<div class="col-2"></div>
+
+</div>
